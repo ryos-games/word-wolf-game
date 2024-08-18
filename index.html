@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ワードウルフゲーム - 子供でも楽しめるオンラインゲーム</title>
+        <meta name="description" content="ワードウルフは、友達や家族と一緒に遊べる楽しいオンラインゲームです。簡単なルールで、小学生でも楽しめる！今すぐ遊びましょう。">
+        <meta name="keywords" content="ワードウルフ, オンラインゲーム, 子供向け, 小学生, ゲーム, 友達と遊ぶ">
+        <link rel="stylesheet" href="styles.css">
+    </head><body>
+    <h1>こどもむけワードウルフ</h1>
+    <div id="setup">
+        <label for="players">にんずうをえらぶ（３～１０人）</label>
+        <input type="number" id="players" name="players" min="3" max="10">
+        
+        <label for="theme">テーマをえらぶ</label>
+        <select id="theme" name="theme">
+            <option value="Food">たべもの</option>
+            <option value="Animal">どうぶつ</option>
+            <option value="Color">いろ</option>
+            <option value="Sport">スポーツ</option>
+            <!-- 他のテーマを追加できます -->
+        </select>
+        <label for="wolves">ウルフのにんずうをえらぶ</label>
+        <input type="number" id="wolves" name="wolves" min="1" max="3">
+
+        <label>プレイヤーの名前を入力</label>
+        <div id="playerNames">
+            <!-- プレイヤーの名前を入力するフィールドが動的に追加される -->
+        </div>
+
+    </div>
+    <button id="startGame">ゲームかいし</button>
+
+    <div id="game" style="display:none;">
+        <h2 id="currentPlayer"></h2>
+        <p id="wordDisplay"></p>
+        <button id="nextPlayer">つぎのひとのワード</button>
+    </div>
+    <button id="endGame" style="display:none;">ゲームをおわる</button>
+    
+    <div id="results" style="display:none;">
+        <h2>みんなのワード</h2>
+        <ul id="playerResults"></ul>
+        <button id="restartGame">もういちどあそぶ</button>
+    </div>
+    <div id="game-rules">
+        <h2>ワードウルフのあそびかた</h2>
+        <ol>
+            <li><strong>みんなでゲームをはじめます。</strong>
+                <ul>
+                    <li>さいしょに、あそぶ人数とテーマをきめます。</li>
+                    <li>じぶんの名前を入力します。</li>
+                </ul>
+            </li>
+            <li><strong>ウルフの人数をきめます。</strong>
+                <ul>
+                    <li>ウルフは、みんなとちがう言葉をもらう人です。</li>
+                    <li>ウルフの人数は、あそぶ人数の半分までしかえらべません。</li>
+                </ul>
+            </li>
+            <li><strong>ゲームがはじまります。</strong>
+                <ul>
+                    <li>スタートすると、じぶんの名前が出てくるので、順番に言葉をかくにんしましょう。</li>
+                    <li>ほかの人には自分の言葉を見せないようにします。</li>
+                </ul>
+            </li>
+            <li><strong>みんなが言葉をかくにんしたら、話しあいスタート！</strong>
+                <ul>
+                    <li>みんなで話しあって、ウルフがだれかを当てます。</li>
+                    <li>ウルフの人は、自分がウルフだとバレないように気をつけて話しましょう。</li>
+                </ul>
+            </li>
+            <li><strong>話しあいがおわったら、「ゲームをおわる」のボタンを押します。</strong>
+                <ul>
+                    <li>だれがウルフだったかがわかります！</li>
+                </ul>
+            </li>
+            <li><strong>もう一度あそびたいときは、「もういちどあそぶ」のボタンを押して、また最初から遊べます。</strong></li>
+        </ol>
+        <p><strong>さあ、みんなで楽しくウルフを見つけよう！</strong></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

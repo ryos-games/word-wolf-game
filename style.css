@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+#game {
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+}
+#setup {
+    width: 80%;
+    max-width: 600px; /* 最大幅を設定して、画面が大きくてもバランスを保つ */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; /* テキストは左寄せ */
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+input[type="number"],
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+button {
+    margin: 10px auto;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+#game-rules {
+    width: 80%; /* 中央に配置するために適切な幅を設定 */
+    max-width: 600px;
+    margin: 0 auto; /* 自動マージンで中央配置 */
+    text-align: left; /* テキストを左寄せ */
+    font-family: Arial, sans-serif; /* 読みやすいフォントを指定 */
+    line-height: 1.6; /* 行間を少し広げて読みやすくする */
+    padding: 20px; /* コンテンツ周りに余白を追加 */
+    background-color: #f9f9f9; /* 背景色を薄いグレーに設定 */
+    border-radius: 10px; /* 角を少し丸める */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影をつけて浮き上がらせる */
+}
+
+#game-rules h2 {
+    text-align: center; /* 見出しは中央寄せ */
+    font-size: 24px; /* 見出しの文字サイズ */
+}
+
+#game-rules ol {
+    padding-left: 20px; /* リストのインデントを設定 */
+}
+
+#game-rules li {
+    margin-bottom: 10px; /* リストの各項目の間に余白を追加 */
+}
+
+#game-rules ul {
+    padding-left: 20px; /* サブリストのインデントを設定 */
+}
+
+#game-rules p {
+    text-align: center; /* 最後のメッセージは中央寄せ */
+    font-weight: bold; /* 最後のメッセージを太字に */
+    font-size: 18px; /* メッセージの文字サイズを少し大きく */
+}
+
+#result {
+    width: 100%;
+    max-width: 400px; /* 最大幅を400pxに設定 */
+    margin: 20px auto; /* 自動マージンで中央配置 */
+    text-align: center; /* テキストは中央寄せ */
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影をつけて見た目を強調 */
+}
